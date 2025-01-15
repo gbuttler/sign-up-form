@@ -1,6 +1,46 @@
+:root {
+  --dark-text-color: #48381e;
+  --dark-highlight-color: #a04d40;
+  --light-text-color: #8e9985;
+  --bright-highlight-color: #e5a110;
+  --light-background-color: #d4b39b;
+}
+
+html,
 body {
-  font-family: "Lavishly Yours", serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  font-family: "Quintessential", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 100px;
+  color: var(--dark-text-color);
+  background-color: var(--light-background-color);
+  height: 100vh;
+  width: 100vw;
+}
+
+.title {
+  background-image: url(./images/mel-poole-LlX6BlViuUg-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.page-name {
+  padding: 5%;
+  font-size: 70px;
+  background-color: rgb(142, 153, 133, 0.8);
+  width: 100vh;
+  display: flex;
+  justify-content: right;
+}
+
+.information {
+  padding: 10px;
 }

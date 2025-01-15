@@ -8,14 +8,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Quintessential&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
-    <p>hello</p>
-    <p>hello</p>
-    <h1>hello</h1>
+    <div class="title">
+      <h1 class="page-name">Crafting Notes</h1>
+    </div>
+    <div class="information">
+      <div>
+        <p class="intro">
+          Do you dream of crafting, but find that you have too many ideas? Log
+          in below and find the perfect place to store all of your past, present
+          and future projects.
+        </p>
+      </div>
+      <div class="log-in-form">
+        <form action="" method="POST">
+          <h3 id="form-heading">Let's get crafting!</h3>
+
+          <div>
+            <label for="first-name">First Name</label>
+            <br />
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="Button"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="last-name">Last Name</label>
+            <br />
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Box"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="email">Email</label>
+            <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="button.box@biscuits.com"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="password">Password</label>
+            <br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="6"
+              maxlength="15"
+              required
+            />
+          </div>
+          <br />
+          <input type="submit" value="Begin crafting!" id="submit-button" />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
