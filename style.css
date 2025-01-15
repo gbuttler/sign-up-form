@@ -3,7 +3,7 @@
   --dark-highlight-color: #a04d40;
   --light-text-color: #8e9985;
   --bright-highlight-color: #e5a110;
-  --light-background-color: #d4b39b;
+  --light-background-color: #ecded4;
 }
 
 html,
@@ -43,4 +43,26 @@ body {
 
 .information {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-options {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#submit {
+  width: 100%;
+  background-color: var(--light-text-color);
+  font-size: 30px;
+  font-family: "Quintessential", serif;
 }

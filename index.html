@@ -20,65 +20,71 @@
     <div class="information">
       <div>
         <p class="intro">
-          Do you dream of crafting, but find that you have too many ideas? Log
-          in below and find the perfect place to store all of your past, present
-          and future projects.
+          Do you dream of crafting, but find that you have too many ideas?
+        </p>
+        <p>
+          Log in below and find the perfect place to store all of your past,
+          present and future projects.
         </p>
       </div>
+      <br />
       <div class="log-in-form">
         <form action="" method="POST">
           <h3 id="form-heading">Let's get crafting!</h3>
+          <div class="form-options">
+            <div>
+              <label for="first-name">First Name</label>
+              <br />
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Button"
+                required
+              />
+            </div>
 
-          <div>
-            <label for="first-name">First Name</label>
+            <div>
+              <label for="last-name">Last Name</label>
+              <br />
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Box"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="button.box@biscuits.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <br />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="6"
+                maxlength="15"
+                required
+              />
+            </div>
             <br />
-            <input
-              type="text"
-              id="first-name"
-              name="first-name"
-              placeholder="Button"
-              required
-            />
           </div>
-          <br />
-          <div>
-            <label for="last-name">Last Name</label>
-            <br />
-            <input
-              type="text"
-              id="last-name"
-              name="last-name"
-              placeholder="Box"
-              required
-            />
+          <div class="submit-button">
+            <input type="submit" value="Begin crafting!" id="submit" />
           </div>
-          <br />
-          <div>
-            <label for="email">Email</label>
-            <br />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="button.box@biscuits.com"
-              required
-            />
-          </div>
-          <br />
-          <div>
-            <label for="password">Password</label>
-            <br />
-            <input
-              type="password"
-              id="password"
-              name="password"
-              minlength="6"
-              maxlength="15"
-              required
-            />
-          </div>
-          <br />
-          <input type="submit" value="Begin crafting!" id="submit-button" />
         </form>
       </div>
     </div>
