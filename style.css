@@ -2,6 +2,7 @@
   --dark-text-color: #48381e;
   --dark-highlight-color: #a04d40;
   --light-text-color: #8e9985;
+  --translucent-test-color: rgb(142, 153, 133, 0.8);
   --bright-highlight-color: #e5a110;
   --light-background-color: #ecded4;
 }
@@ -35,34 +36,68 @@ body {
 .page-name {
   padding: 5%;
   font-size: 70px;
-  background-color: rgb(142, 153, 133, 0.8);
+  background-color: var(--translucent-test-color);
   width: 100vh;
   display: flex;
   justify-content: right;
 }
 
 .information {
-  padding: 10px;
+  padding: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.intro {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 25px;
+}
+
 .form-options {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .submit-button {
   display: flex;
-  justify-content: center;
-  padding: 10px;
+  justify-content: start;
 }
 
 #submit {
-  width: 100%;
+  width: 30%;
   background-color: var(--light-text-color);
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Quintessential", serif;
+  margin-top: 20px;
+  padding: 3px;
+}
+
+#form-heading {
+  font-size: 30px;
+}
+
+.form-options input {
+  border: 1px solid var(--dark-text-color);
+  width: 30%;
+  height: 30px;
+  font-size: 19px;
+  font-family: "Quintessential", serif;
+}
+
+.form-options input:focus {
+  background-color: var(--translucent-test-color);
+}
+
+.form-options input:invalid {
+  border: 2px solid var(--dark-highlight-color);
+}
+
+.option {
+  padding-top: 2%;
+}
+
+.form-options label {
+  font-size: 20px;
 }
